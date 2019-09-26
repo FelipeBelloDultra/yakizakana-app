@@ -20,6 +20,11 @@ export class AppComponent {
       title: 'Cardápio',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Sobre nós',
+      url:'/about',
+      icon: 'people'
     }
   ];
 
