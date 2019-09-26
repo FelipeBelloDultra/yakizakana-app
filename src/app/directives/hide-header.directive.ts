@@ -15,7 +15,7 @@ export class HideHeaderDirective {
   ngOnInit() {
     this.header = this.header.el;
 
-    this.renderer.setStyle(this.header, 'transition', 'margin-top 400ms');
+    this.renderer.setStyle(this.header, 'transition', 'margin-top 250ms');
   }
 
   onContentScroll(event: any) {

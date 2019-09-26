@@ -5,7 +5,6 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { ListPage } from './list.page';
-import { HideHeaderDirective } from '../directives/hide-header.directive';
 
 @NgModule({
   imports: [
@@ -19,6 +18,6 @@ import { HideHeaderDirective } from '../directives/hide-header.directive';
       }
     ])
   ],
-  declarations: [ListPage, HideHeaderDirective]
+  declarations: [ListPage]
 })
 export class ListPageModule {}
