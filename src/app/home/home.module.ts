@@ -5,7 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import { HideHeaderDirective } from '../directives/hide-header.directive';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -17,8 +17,9 @@ import { HideHeaderDirective } from '../directives/hide-header.directive';
         path: '',
         component: HomePage
       }
-    ])
+    ]), 
+    SharedModule
   ],
-  declarations: [HomePage, HideHeaderDirective]
+  declarations: [HomePage]
 })
 export class HomePageModule {}

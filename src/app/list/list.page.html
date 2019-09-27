@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header #header>
   <ion-toolbar color="wine">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -13,7 +13,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <ion-card>
     <ion-card-content *ngFor="let cardapio of listaCardapio">
