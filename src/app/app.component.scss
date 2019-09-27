@@ -1,10 +1,13 @@
 #background-menu {
-    --background-image: url(../assets/background-menu/fundo-menu.jpg);
-    --background-repeat: no-repeat;
-    --background-size: cover;
-    --background-position: 50% 50%;
+    background-image: url(../assets/background-menu/fundo-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
+.list-md {
+    padding: 0;
+}
 
 // .list-md {
 //     background-image: url(https://i.pinimg.com/originals/f3/90/23/f39023e57d09481db0498d70a00438fd.jpg);
