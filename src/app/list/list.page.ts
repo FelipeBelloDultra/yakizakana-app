@@ -6,10 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['list.page.scss']
 })
 export class ListPage implements OnInit {
-  
-  listaCardapio = [{nome: 'Sushi', preco: 'R$ 22,00', descricao: 'Sushi é um prato da culinária japonesa que possui origem numa antiga técnica de conservação da carne de peixe em arroz avinagrado.', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'},
-                  {nome: 'Sashimi', preco: 'R$ 30,00', descricao: 'Sashimi é uma iguaria da culinária japonesa que consiste de peixes e frutos do mar muito frescos, fatiados em pequenos pedaços e servidos apenas com algum tipo de molho, e guarnições simples como shiso e raiz de daikon fatiada. ', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'}];
 
+  public listaCardapio = [
+    { nome: 'Sushi', preco: 'R$ 22,00', descricao: 'Sushi é um prato da culinária japonesa que possui origem numa antiga técnica de conservação da carne de peixe em arroz avinagrado.', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Sashimi', preco: 'R$ 30,00', descricao: 'Sashimi é uma iguaria da culinária japonesa que consiste de peixes e frutos do mar muito frescos, fatiados em pequenos pedaços e servidos apenas com algum tipo de molho, e guarnições simples como shiso e raiz de daikon fatiada. ', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' }
+  ];
+
+  public listaFiltrada = [];
+
+  public inicia() {
+    this.listaFiltrada = this.listaCardapio;
+  }
+
+  constructor() {
+    this.inicia();
+  }
+
+  public buscaComida(evento) {
+    this.inicia();
+    let busca: string = evento.target.value;
+
+    if (busca && busca.trim() !== '') {
+      this.listaFiltrada = this.listaFiltrada.filter(item => {
+        return item.nome.toLowerCase().includes(busca.toLowerCase());
+      })
+    }
+  }
 
   ngOnInit() {
   }

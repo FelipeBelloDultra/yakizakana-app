@@ -9,14 +9,14 @@
 
   </ion-toolbar>
   <ion-toolbar color="wine">
-    <ion-searchbar animated placeholder="Buscar comida..."></ion-searchbar>
+    <ion-searchbar animated (ionInput)="buscaComida($event)" placeholder="Buscar comida..."></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <ion-card>
-    <ion-card-content *ngFor="let cardapio of listaCardapio">
+    <ion-card-content *ngFor="let cardapio of listaFiltrada">
       <ion-item routerLink="/description">
         <ion-thumbnail slot="start">
           <img src="{{ cardapio.img }}">
