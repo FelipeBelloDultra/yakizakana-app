@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="dark">
+  <ion-toolbar color="wine">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -8,21 +8,21 @@
     </ion-title>
 
   </ion-toolbar>
-  <ion-toolbar color="dark">
-      <ion-searchbar animated placeholder="Buscar comida..."></ion-searchbar>
+  <ion-toolbar color="wine">
+    <ion-searchbar animated placeholder="Buscar comida..."></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-card>
-    <ion-card-content>
-      <ion-item>
+    <ion-card-content *ngFor="let cardapio of listaCardapio">
+      <ion-item routerLink="/description">
         <ion-thumbnail slot="start">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-thumbnail>  
-        <ion-label>Nome Produto</ion-label>
-        <ion-badge slot="end">R$ 22,00</ion-badge>
+          <img src="{{ cardapio.img }}">
+        </ion-thumbnail>
+        <ion-label>{{ cardapio.nome }}</ion-label>
+        <ion-badge slot="end" color="wine">{{ cardapio.preco }}</ion-badge>
       </ion-item>
     </ion-card-content>
   </ion-card>

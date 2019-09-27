@@ -6,29 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['list.page.scss']
 })
 export class ListPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
-  }
+  
+  listaCardapio = [{nome: 'Sushi', preco: 'R$ 22,00', descricao: 'Sushi é um prato da culinária japonesa que possui origem numa antiga técnica de conservação da carne de peixe em arroz avinagrado.', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'},
+                  {nome: 'Sashimi', preco: 'R$ 30,00', descricao: 'Sashimi é uma iguaria da culinária japonesa que consiste de peixes e frutos do mar muito frescos, fatiados em pequenos pedaços e servidos apenas com algum tipo de molho, e guarnições simples como shiso e raiz de daikon fatiada. ', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y'}];
+
 
   ngOnInit() {
   }

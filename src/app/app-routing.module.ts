@@ -15,7 +15,9 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
   },
-  { path: 'about', loadChildren: './about/about.module#AboutPageModule' }
+  { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
+  { path: 'description', loadChildren: './description/description.module#DescriptionPageModule' },
+  { path: 'cardapio', loadChildren: './cardapio/cardapio.module#CardapioPageModule' }
 ];
 
 @NgModule({
