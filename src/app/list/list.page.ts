@@ -8,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class ListPage implements OnInit {
 
   public listaCardapio = [
-    { nome: 'Sushi', preco: 'R$ 22,00', descricao: 'Sushi é um prato da culinária japonesa que possui origem numa antiga técnica de conservação da carne de peixe em arroz avinagrado.', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
-    { nome: 'Sashimi', preco: 'R$ 30,00', descricao: 'Sashimi é uma iguaria da culinária japonesa que consiste de peixes e frutos do mar muito frescos, fatiados em pequenos pedaços e servidos apenas com algum tipo de molho, e guarnições simples como shiso e raiz de daikon fatiada. ', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' }
+    { nome: 'Sushi', preco: 22.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Sashimi', preco:  30.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Hossomakis', preco:  17.50, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Yakisoba', preco:  15.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Robata', preco:  20.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Uramakis', preco:  9.99, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Niguiri', preco:  10.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Tempura', preco:  30.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Wasabi', preco:  23.00, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Temakis', preco:  8.80, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' },
+    { nome: 'Ramen', preco:  8.80, descricao: '', img: 'https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y' }
+
   ];
 
   public listaFiltrada = [];

@@ -22,7 +22,7 @@
           <img src="{{ cardapio.img }}">
         </ion-thumbnail>
         <ion-label>{{ cardapio.nome }}</ion-label>
-        <ion-badge slot="end" color="wine">{{ cardapio.preco }}</ion-badge>
+        <ion-badge slot="end" color="wine">{{ cardapio.preco | currency:'BRL':true}}</ion-badge>
       </ion-item>
     </ion-card-content>
   </ion-card>
