@@ -1,0 +1,72 @@
+<ion-content color="brown">
+
+  <ion-slides class="w-100 h-100">
+    <ion-slide>
+      <form #form="ngForm" (ngSubmit)="register(form)">
+        <ion-grid>
+          <ion-row color="primary" justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+              <div text-center>
+                <h1>Login</h1>
+              </div>
+              <div padding>
+                <ion-item class="rounded-top">
+                  <ion-label position="floating">Email:</ion-label>
+                  <ion-input name="email" type="email"></ion-input>
+                </ion-item>
+                <ion-item class="rounded-bottom">
+                  <ion-label position="floating">Senha:</ion-label>
+                  <ion-input name="password" type="password"></ion-input>
+                </ion-item>
+              </div>
+              <div padding>
+                <ion-button size="large" expand="block" color="wine">Autenticar</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </form>
+    </ion-slide>
+
+    <ion-slide>
+      <form #form="ngForm" (ngSubmit)="register(form)">
+        <ion-grid>
+          <ion-row color="primary" justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+              <div text-center>
+                <h1>Registro</h1>
+              </div>
+              <div padding>
+                <ion-item class="rounded-top">
+                  <ion-label position="floating">Nome:</ion-label>
+                  <ion-input name="email" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Sobrenome:</ion-label>
+                    <ion-input name="email" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Email:</ion-label>
+                  <ion-input name="email" type="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Senha:</ion-label>
+                  <ion-input name="password" type="password"></ion-input>
+                </ion-item>
+                <ion-item class="rounded-bottom">
+                  <ion-label position="floating">Repetir senha:</ion-label>
+                  <ion-input name="password" type="password"></ion-input>
+                </ion-item>
+              </div>
+              <div padding>
+                <ion-button size="large" expand="block" color="wine">Registrar</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </form>
+    </ion-slide>
+  </ion-slides>
+  <ion-button routerLink="/home">Voltar</ion-button>
+
+</ion-content>
