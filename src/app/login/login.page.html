@@ -1,72 +1,43 @@
 <ion-content color="brown">
+  <ion-slides class="w-100 h-100" scrollbar="true">
 
-  <ion-slides class="w-100 h-100">
     <ion-slide>
-      <form #form="ngForm" (ngSubmit)="register(form)">
-        <ion-grid>
-          <ion-row color="primary" justify-content-center>
-            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-              <div text-center>
-                <h1>Login</h1>
-              </div>
-              <div padding>
-                <ion-item class="rounded-top">
-                  <ion-label position="floating">Email:</ion-label>
-                  <ion-input name="email" type="email"></ion-input>
-                </ion-item>
-                <ion-item class="rounded-bottom">
-                  <ion-label position="floating">Senha:</ion-label>
-                  <ion-input name="password" type="password"></ion-input>
-                </ion-item>
-              </div>
-              <div padding>
-                <ion-button size="large" expand="block" color="wine">Autenticar</ion-button>
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </form>
+      <ion-content color="brown">
+        <img src="https://assets.webiconspng.com/uploads/2017/09/Sushi-PNG-Image-99671-300x300.png" alt="Loading" class="img-fluid">
+        <h3 class="text-center mt-5">Arreste para efetuar o login</h3>
+        <ion-icon name="arrow-round-forward" style="font-size: 30pt;"></ion-icon>
+      </ion-content>
     </ion-slide>
 
     <ion-slide>
-      <form #form="ngForm" (ngSubmit)="register(form)">
-        <ion-grid>
-          <ion-row color="primary" justify-content-center>
-            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-              <div text-center>
-                <h1>Registro</h1>
-              </div>
-              <div padding>
-                <ion-item class="rounded-top">
-                  <ion-label position="floating">Nome:</ion-label>
-                  <ion-input name="email" type="text"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label position="floating">Sobrenome:</ion-label>
-                    <ion-input name="email" type="text"></ion-input>
-                </ion-item>
-                <ion-item>
-                  <ion-label position="floating">Email:</ion-label>
-                  <ion-input name="email" type="email"></ion-input>
-                </ion-item>
-                <ion-item>
-                  <ion-label position="floating">Senha:</ion-label>
-                  <ion-input name="password" type="password"></ion-input>
-                </ion-item>
-                <ion-item class="rounded-bottom">
-                  <ion-label position="floating">Repetir senha:</ion-label>
-                  <ion-input name="password" type="password"></ion-input>
-                </ion-item>
-              </div>
-              <div padding>
-                <ion-button size="large" expand="block" color="wine">Registrar</ion-button>
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </form>
+      <ion-content color="brown">
+        <form #form="ngForm" (ngSubmit)="register(form)">
+          <ion-grid>
+            <ion-row color="primary" justify-content-center>
+              <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <div text-center>
+                  <h1>Login</h1>
+                </div>
+                <div padding>
+                  <ion-item class="rounded-top">
+                    <ion-label position="floating">Email:</ion-label>
+                    <ion-input name="email" type="email" required></ion-input>
+                  </ion-item>
+                  <ion-item class="rounded-bottom">
+                    <ion-label position="floating">Senha:</ion-label>
+                    <ion-input name="password" type="password" required></ion-input>
+                  </ion-item>
+                </div>
+                <div padding>
+                  <ion-button size="large" expand="block" color="wine" routerLink="/home">Autenticar</ion-button>
+                </div>
+                <p>Não possui conta? <strong routerLink="/register">Cadastre-se</strong></p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </form>
+      </ion-content>
     </ion-slide>
+
   </ion-slides>
-  <ion-button routerLink="/home">Voltar</ion-button>
-
 </ion-content>
