@@ -2,43 +2,41 @@
   <ion-slides class="w-100 h-100" scrollbar="true">
     <ion-slide>
       <ion-content color="brown">
-        <form #form="ngForm" (ngSubmit)="register(form)">
-          <ion-grid>
-            <ion-row color="primary" justify-content-center>
-              <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-                <div text-center>
-                  <h1>Cadastrar</h1>
-                </div>
-                <div padding>
-                  <ion-item class="rounded-top">
-                    <ion-label position="floating">Nome:</ion-label>
-                    <ion-input name="firstName" type="text" required></ion-input>
-                  </ion-item>
-                  <ion-item>
-                    <ion-label position="floating">Sobrenome:</ion-label>
-                    <ion-input name="lastName" type="text" required></ion-input>
-                  </ion-item>
-                  <ion-item>
-                    <ion-label position="floating">Email:</ion-label>
-                    <ion-input name="email" type="email" required></ion-input>
-                  </ion-item>
-                  <ion-item>
-                    <ion-label position="floating">Senha:</ion-label>
-                    <ion-input name="password" type="password" required></ion-input>
-                  </ion-item>
-                  <ion-item class="rounded-bottom">
-                    <ion-label position="floating">Repetir Senha:</ion-label>
-                    <ion-input name="repeatPassword" type="password" required></ion-input>
-                  </ion-item>
-                </div>
-                <div padding>
-                  <ion-button size="large" expand="block" color="wine" routerLink="/home">Cadastrar</ion-button>
-                </div>
-                <p>Já possui uma conta? <strong routerLink="/login">Faça login</strong></p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </form>
+        <ion-grid>
+          <ion-row color="primary" class="ion-justify-content-center">
+            <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+              <div class="ion-text-center">
+                <h1>Cadastrar</h1>
+              </div>
+              <div class="ion-padding">
+                <ion-item class="rounded-top">
+                  <ion-label position="floating">Nome:</ion-label>
+                  <ion-input [(ngModel)]="firstName" type="text" required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Sobrenome:</ion-label>
+                  <ion-input [(ngModel)]="lastName" type="text" required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Email:</ion-label>
+                  <ion-input [(ngModel)]="email" type="email" required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Senha:</ion-label>
+                  <ion-input [(ngModel)]="password" type="password" required></ion-input>
+                </ion-item>
+                <ion-item class="rounded-bottom">
+                  <ion-label position="floating">Repetir Senha:</ion-label>
+                  <ion-input [(ngModel)]="repeatPassword" type="password" required></ion-input>
+                </ion-item>
+              </div>
+              <div class="ion-padding">
+                <ion-button size="large" expand="block" color="wine" routerLink="/home">Cadastrar</ion-button>
+              </div>
+              <p>Já possui uma conta? <strong routerLink="/login">Faça login</strong></p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-content>
     </ion-slide>
   </ion-slides>

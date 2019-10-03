@@ -9,6 +9,12 @@ export class RegisterPage implements OnInit {
 
   constructor() { }
 
+  public firstName;
+  public lastName;
+  public email;
+  public password;
+  public repeatPassword;
+
   ngOnInit() {
   }
 
