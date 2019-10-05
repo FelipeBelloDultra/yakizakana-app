@@ -22,8 +22,13 @@ export class AppComponent {
       icon: 'list'
     },
     {
+      title: 'Minhas compras',
+      url: '/cart',
+      icon: 'cart'
+    },
+    {
       title: 'Sobre nós',
-      url:'/about',
+      url: '/about',
       icon: 'people'
     }
   ];
