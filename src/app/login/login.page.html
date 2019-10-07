@@ -4,8 +4,7 @@
     <ion-slide>
       <ion-content color="brown">
         <h1 class="text-center">Yakizakana</h1>
-        <img src="../../assets/login/yakizakana.svg" alt="Loading"
-          class="img-fluid">
+        <img src="../../assets/login/yakizakana.svg" alt="Loading" class="img-fluid">
         <h3 class="text-center mt-5">Arreste para efetuar o login</h3>
         <ion-icon name="arrow-round-forward" style="font-size: 30pt;"></ion-icon>
       </ion-content>
@@ -30,7 +29,7 @@
                 </ion-item>
               </div>
               <div class="ion-padding">
-                <ion-button size="large" expand="block" color="wine" routerLink="/home">Autenticar</ion-button>
+                <ion-button size="large" expand="block" color="wine" (click)="autenticar()">Autenticar</ion-button>
               </div>
               <p>Não possui conta? <strong routerLink="/register">Cadastre-se</strong></p>
             </ion-col>
