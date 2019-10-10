@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   { path: 'about', loadChildren: './about/about.module#AboutPageModule' },
   { path: 'description', loadChildren: './description/description.module#DescriptionPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' }
 
 

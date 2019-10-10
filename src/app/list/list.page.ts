@@ -18,18 +18,27 @@ export class ListPage implements OnInit {
     { nome: 'Tempura', preco:  30.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5hnJVqFt4LxD6cZGKrHYiS6ygCwigds4sdY1c29oNmqgQ1AVQ' },
     { nome: 'Wasabi', preco:  23.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRnSjNIYJw_C6lOkCW1qkp0Hr098fz43MW46ikfQu5Ifjx4x9-' },
     { nome: 'Temakis', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXscIr91pQ0j5S6AIGxWUDxokvc2Jsg2kd0rnVOr3obTtAR9Nc' },
+    { nome: 'Ramen', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9m29k2xsO2VciFKm0bWhhK1al5uDi1tlZt5dmtDPcwCXTAXEn' },
+    { nome: 'Niguiri', preco:  10.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmqPdnThCXy45m3bz2avKGjZs-bT7jKBVIdMhNiToeDFrsea43' },
+    { nome: 'Tempura', preco:  30.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5hnJVqFt4LxD6cZGKrHYiS6ygCwigds4sdY1c29oNmqgQ1AVQ' },
+    { nome: 'Wasabi', preco:  23.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRnSjNIYJw_C6lOkCW1qkp0Hr098fz43MW46ikfQu5Ifjx4x9-' },
+    { nome: 'Temakis', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXscIr91pQ0j5S6AIGxWUDxokvc2Jsg2kd0rnVOr3obTtAR9Nc' },
+    { nome: 'Ramen', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9m29k2xsO2VciFKm0bWhhK1al5uDi1tlZt5dmtDPcwCXTAXEn' },
+    { nome: 'Niguiri', preco:  10.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmqPdnThCXy45m3bz2avKGjZs-bT7jKBVIdMhNiToeDFrsea43' },
+    { nome: 'Tempura', preco:  30.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ5hnJVqFt4LxD6cZGKrHYiS6ygCwigds4sdY1c29oNmqgQ1AVQ' },
+    { nome: 'Wasabi', preco:  23.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRnSjNIYJw_C6lOkCW1qkp0Hr098fz43MW46ikfQu5Ifjx4x9-' },
+    { nome: 'Temakis', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXscIr91pQ0j5S6AIGxWUDxokvc2Jsg2kd0rnVOr3obTtAR9Nc' },
     { nome: 'Ramen', preco:  8.80, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9m29k2xsO2VciFKm0bWhhK1al5uDi1tlZt5dmtDPcwCXTAXEn' }
-
   ];
+
+  constructor() {
+    this.inicia();
+  }
 
   public listaFiltrada = [];
 
   public inicia() {
     this.listaFiltrada = this.listaCardapio;
-  }
-
-  constructor() {
-    this.inicia();
   }
 
   public buscaComida(evento) {
