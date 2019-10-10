@@ -17,6 +17,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Promoções',
+      url: '/promotion',
+      icon: 'basket'
+    },
+    {
       title: 'Cardápio',
       url: '/list',
       icon: 'list'
