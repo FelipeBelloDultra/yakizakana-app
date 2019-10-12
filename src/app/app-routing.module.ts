@@ -19,7 +19,9 @@ const routes: Routes = [
   { path: 'description', loadChildren: './description/description.module#DescriptionPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },  { path: 'promotion', loadChildren: './promotion/promotion.module#PromotionPageModule' }
+  { path: 'cart', loadChildren: './cart/cart.module#CartPageModule' },
+  { path: 'promotion', loadChildren: './promotion/promotion.module#PromotionPageModule' },  { path: 'food', loadChildren: './food/food.module#FoodPageModule' }
+
 
 
 

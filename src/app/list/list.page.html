@@ -1,30 +1,43 @@
 <ion-header>
-  <ion-toolbar color="wine" #header>
+  <ion-toolbar color="wine">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Cardápio
+      Menu
     </ion-title>
-
-  </ion-toolbar>
-  <ion-toolbar color="wine">
-    <ion-searchbar animated (ionInput)="buscaComida($event)" placeholder="Buscar comida..."></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content scrollEvents="true" appHideHeader [header]="header">
+<ion-content>
 
-  <ion-card>
-    <ion-card-content *ngFor="let cardapio of listaFiltrada">
-      <ion-item routerLink="/description">
-        <ion-thumbnail slot="start">
-          <img src="{{ cardapio.img }}">
-        </ion-thumbnail>
-        <ion-label>{{ cardapio.nome }}</ion-label>
-        <ion-badge slot="end" color="brown">{{ cardapio.preco | currency:'BRL':true }}</ion-badge>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
+  <div class="w-100 h-25" id="food" routerLink="/food">
+    <div class="d-flex justify-content-center align-items-center">
+    <p class="text-white font-title">Pratos</p>
+      </div>
+    
+  </div>
+
+  <div class="w-100 h-25" id="drinks">
+      <div class="d-flex justify-content-center align-items-center">
+    <p class="text-white font-title">Bebidas</p>
+        </div>
+    
+  </div>
+
+  <div class="w-100 h-25" id="candy">
+      <div class="d-flex justify-content-center align-items-center">
+    <p class="text-white font-title">Doces</p>
+        </div>
+    
+  </div>
+
+  <div class="w-100 h-25" id="plates">
+      <div class="d-flex justify-content-center align-items-center">
+    <p class="text-white font-title">Pratos prontos</p>
+        </div>
+    
+  </div>
+  
 
 </ion-content>
