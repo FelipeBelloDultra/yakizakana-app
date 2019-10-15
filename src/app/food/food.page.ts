@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodPage implements OnInit {
 
-  public listaCardapio = [
+  public listaPrato = [
     { nome: 'Sushi', preco: 22.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYUN5eVrPefcHyHd0r_cOWED5MT5wHtK7_0eHtHjFzOjQyLoW4' },
     { nome: 'Sashimi', preco:  30.00, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHtMr6dWrjqW1867_bQf5Njh52QSESiB2S5jJZQTzw1UQioVG3' },
     { nome: 'Hossomakis', preco:  17.50, descricao: '', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSiUdIdoLQ6HbK0AFyoSrVSmbbvp7l7Mpf6mu9pBuhllNy7KrJ5' },
@@ -38,7 +38,7 @@ export class FoodPage implements OnInit {
   public listaFiltrada = [];
 
   public inicia() {
-    this.listaFiltrada = this.listaCardapio;
+    this.listaFiltrada = this.listaPrato;
   }
 
   public buscaComida(evento) {

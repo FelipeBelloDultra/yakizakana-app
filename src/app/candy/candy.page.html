@@ -4,7 +4,7 @@
       <ion-back-button routerLink="/list"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Pratos
+      Doces
     </ion-title>
 
   </ion-toolbar>
@@ -16,13 +16,13 @@
 <ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <ion-card>
-    <ion-card-content *ngFor="let prato of listaFiltrada">
+    <ion-card-content *ngFor="let doce of listaFiltrada">
       <ion-item routerLink="/description">
         <ion-thumbnail slot="start">
-          <img src="{{ prato.img }}" alt="{{ prato.nome }}">
+          <img src="{{ doce.img }}" alt="{{ doce.nome }}">
         </ion-thumbnail>
-        <ion-label>{{ prato.nome }}</ion-label>
-        <ion-badge slot="end" color="brown">{{ prato.preco | currency:'BRL':true }}</ion-badge>
+        <ion-label>{{ doce.nome }}</ion-label>
+        <ion-badge slot="end" color="brown">{{ doce.preco | currency:'BRL':true }}</ion-badge>
       </ion-item>
     </ion-card-content>
   </ion-card>

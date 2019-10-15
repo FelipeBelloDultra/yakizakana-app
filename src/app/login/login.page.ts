@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
   
   public autenticar() {
     if (this.email != 'felipe@email.com' && this.password != 'felipe123') {
-      console.log('Falha na autenticação');
+      alert('Falha na autenticação');
       this.email = null;
       this.password = null;
     } else {
