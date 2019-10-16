@@ -11,6 +11,9 @@
 
   <ion-card>
     <ion-list *ngFor="let list of cartList">
+      <ion-button size="small" class="rounded" color="danger">
+        Remover
+      </ion-button>
       <ion-item lines="full">
         <ion-thumbnail slot="start">
           <img src="{{ list.img }}" alt="Thmbnail">
@@ -23,9 +26,13 @@
     </ion-list>
     <h3 class="text-center">Itens selecionados: {{ itens }}</h3>
     <h3 class="text-center">Valor total: {{ amount | currency:'BRL':true }}</h3>
+
+    <ion-button expand="block" size="default" class="mt-3 mx-2 rounded" color="success" routerLink="/list">
+      Adicionar
+    </ion-button>
     <ion-button expand="full" size="default" class="mt-3" color="wine">
       Finalizar Compra
     </ion-button>
   </ion-card>
-  
+
 </ion-content>

@@ -25,8 +25,6 @@ const routes: Routes = [
   { path: 'candy', loadChildren: './candy/candy.module#CandyPageModule' },
   { path: 'drink', loadChildren: './drink/drink.module#DrinkPageModule' }
 
-
-
 ];
 
 @NgModule({
