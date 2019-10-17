@@ -11,7 +11,7 @@
 
   <ion-card>
     <ion-list *ngFor="let list of cartList">
-      <ion-button size="small" class="rounded" color="danger">
+      <ion-button size="small" class="rounded" color="danger" (click)="removeCart()">
         Remover
       </ion-button>
       <ion-item lines="full">

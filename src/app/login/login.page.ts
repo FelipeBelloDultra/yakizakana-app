@@ -18,13 +18,14 @@ export class LoginPage implements OnInit {
   router: Router;
   
   public autenticar() {
-    if (this.email != 'felipe@email.com' && this.password != 'felipe123') {
-      alert('Falha na autenticação');
-      this.email = null;
-      this.password = null;
-    } else {
-      this.router.navigate(['/home']);    
-    }
+    // if (this.email != 'felipe@email.com' && this.password != 'felipe123') {
+    //   alert('Falha na autenticação');
+    //   this.email = null;
+    //   this.password = null;
+    // } else {
+    //   this.router.navigate(['/home']);    
+    // }
+    this.router.navigate(['/home']);
   }
 
   ngOnInit() {

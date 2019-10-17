@@ -1,4 +1,4 @@
-<ion-header #header>
+<ion-header>
   <ion-toolbar color="wine">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content scrollEvents="true" appHideHeader [header]="header">
+<ion-content>
   <div id="carouselIndicators" class="carousel slide shadow-sm mb-3 mt-2 carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -76,6 +76,6 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-button routerLink="/food">Teste para login</ion-button>
+    <ion-button routerLink="/login">Teste para login</ion-button>
 
 </ion-content>
