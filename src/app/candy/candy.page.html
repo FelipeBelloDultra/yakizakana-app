@@ -19,7 +19,7 @@
     <ion-card-content *ngFor="let doce of listaFiltrada">
       <ion-item routerLink="/description">
         <ion-thumbnail slot="start">
-          <img src="{{ doce.img }}" alt="{{ doce.nome }}">
+          <img [src]="doce.img" alt="{{ doce.nome }}">
         </ion-thumbnail>
         <ion-label>{{ doce.nome }}</ion-label>
         <ion-badge slot="end" color="brown">{{ doce.preco | currency:'BRL':true }}</ion-badge>

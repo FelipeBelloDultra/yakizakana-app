@@ -16,15 +16,21 @@
 <ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <ion-card>
-    <ion-card-content *ngFor="let prato of listaFiltrada">
-      <ion-item routerLink="/description">
+    <ion-card-content *ngFor="let food of listaFiltrada">
+      <ion-item routerLink="/description" (click)="comer(food)">
         <ion-thumbnail slot="start">
-          <img src="{{ prato.img }}" alt="{{ prato.nome }}">
+          <img [src]="food.img" alt="{{ food.nome }}">
         </ion-thumbnail>
-        <ion-label>{{ prato.nome }}</ion-label>
-        <ion-badge slot="end" color="brown">{{ prato.preco | currency:'BRL':true }}</ion-badge>
+        <ion-label>{{ food.nome }}</ion-label>
+        <ion-badge slot="end" color="brown">{{ food.preco | currency:'BRL':true }}</ion-badge>
       </ion-item>
     </ion-card-content>
   </ion-card>
+
+  <!-- <ion-input [(ngModel)]="f"></ion-input><br>
+
+  <ion-button (click)="comer()"></ion-button><br>
+
+  <ion-label>{{ food.etec }}</ion-label><br> -->
 
 </ion-content>

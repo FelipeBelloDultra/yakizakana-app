@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodDescriptionService } from '../services/food-description.service';
 
 @Component({
   selector: 'app-description',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DescriptionPage implements OnInit {
 
-  constructor() { }
+  public prato: any;
+
+  constructor(public food: FoodDescriptionService) {
+    this.prato = this.food.getDados('prato');
+  }
 
   ngOnInit() {
   }
