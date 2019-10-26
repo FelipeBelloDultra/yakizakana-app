@@ -16,13 +16,13 @@
 <ion-content scrollEvents="true" appHideHeader [header]="header">
 
   <ion-card>
-    <ion-card-content *ngFor="let doce of listaFiltrada">
-      <ion-item routerLink="/description">
+    <ion-card-content *ngFor="let candy of listaFiltrada">
+      <ion-item routerLink="/description" (click)="comer(candy)">
         <ion-thumbnail slot="start">
-          <img [src]="doce.img" alt="{{ doce.nome }}">
+          <img [src]="candy.img" alt="{{ candy.nome }}">
         </ion-thumbnail>
-        <ion-label>{{ doce.nome }}</ion-label>
-        <ion-badge slot="end" color="brown">{{ doce.preco | currency:'BRL':true }}</ion-badge>
+        <ion-label>{{ candy.nome }}</ion-label>
+        <ion-badge slot="end" color="brown">{{ candy.preco | currency:'BRL':true }}</ion-badge>
       </ion-item>
     </ion-card-content>
   </ion-card>

@@ -10,8 +10,8 @@ export class DescriptionPage implements OnInit {
 
   public prato: any;
 
-  constructor(public food: FoodDescriptionService) {
-    this.prato = this.food.getDados('prato');
+  constructor(public description: FoodDescriptionService) {
+    this.prato = this.description.getDados('prato');
   }
 
   ngOnInit() {
