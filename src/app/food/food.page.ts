@@ -26,7 +26,7 @@ export class FoodPage implements OnInit {
     this.inicia();
   }
 
-  public comer(food) {
+  public view(food) {
     this.food.setDados('prato', food);
   }
 

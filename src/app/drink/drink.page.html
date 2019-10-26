@@ -17,7 +17,7 @@
 
   <ion-card>
     <ion-card-content *ngFor="let drink of listaFiltrada">
-      <ion-item routerLink="/description" (click)="comer(drink)">
+      <ion-item routerLink="/description" (click)="view(drink)">
         <ion-thumbnail slot="start">
           <img [src]="drink.img" alt="{{ drink.nome }}">
         </ion-thumbnail>

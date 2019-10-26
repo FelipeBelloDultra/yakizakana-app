@@ -28,7 +28,6 @@ export class CartPage implements OnInit {
       this.amount = this.amount + prod.preco;
       this.itens++;
     }
-  
   }
 
 }

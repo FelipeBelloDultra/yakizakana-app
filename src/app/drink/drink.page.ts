@@ -22,7 +22,7 @@ export class DrinkPage implements OnInit {
     this.inicia();
   }
 
-  public comer(drink) {
+  public view(drink) {
     this.drink.setDados('prato', drink);
   }
 

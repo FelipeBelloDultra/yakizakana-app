@@ -22,7 +22,7 @@ export class CandyPage implements OnInit {
     this.inicia();
   }
 
-  public comer(candy) {
+  public view(candy) {
     this.candy.setDados('prato', candy);
   }
 
