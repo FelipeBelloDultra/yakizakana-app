@@ -13,9 +13,9 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content scrollEvents="true" appHideHeader [header]="header">
+<ion-content scrollEvents="true" appHideHeader [header]="header" color="salmon">
 
-  <ion-card>
+  <ion-card color="white">
     <ion-card-content *ngFor="let candy of listaFiltrada">
       <ion-item routerLink="/description" (click)="view(candy)">
         <ion-thumbnail slot="start">
